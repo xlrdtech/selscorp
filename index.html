@@ -1,1 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SELSCORP — Self-Executing Lexicon | Zero-Friction Enterprise Automation</title>
+<meta name="description" content="The Self-Executing Lexicon — the Zero-Friction Enterprise Automation Stack. SELSCORP: architecting the future of automation.">
+<meta property="og:title" content="SELSCORP — The Self-Executing Lexicon">
+<meta property="og:description" content="The Zero-Friction Enterprise Automation Stack. Architecting the future of automation.">
+<meta property="og:image" content="https://selscorp.com/pages/p01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#04060a; --panel:#080d12; --line:#11321f;
+    --green:#27ff9e; --green-dim:#1f8f63; --ink:#cfe9dd; --mute:#5f7d70;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Share Tech Mono",ui-monospace,Menlo,Consolas,monospace;
+    background-image:radial-gradient(circle at 50% -10%,rgba(39,255,158,.10),transparent 60%),
+      linear-gradient(rgba(39,255,158,.03) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(39,255,158,.03) 1px,transparent 1px);
+    background-size:auto,42px 42px,42px 42px;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 
+  header{padding:64px 20px 40px;text-align:center;border-bottom:1px solid var(--line)}
+  .kicker{font-size:12px;letter-spacing:.42em;color:var(--green-dim);text-transform:uppercase}
+  h1{font-family:"Orbitron",sans-serif;font-weight:900;letter-spacing:.06em;margin:14px 0 8px;
+    font-size:clamp(28px,6vw,62px);line-height:1.02;color:#eafff5;
+    text-shadow:0 0 18px rgba(39,255,158,.35),0 0 2px rgba(39,255,158,.8)}
+  h1 .lex{color:var(--green)}
+  .sub{color:var(--mute);font-size:clamp(13px,2.2vw,17px);letter-spacing:.14em;margin:0 auto;max-width:680px}
+  .meta{margin-top:22px;display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;
+    font-size:11px;letter-spacing:.22em;color:var(--green-dim);text-transform:uppercase}
+  .chip{border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:rgba(39,255,158,.04)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);
+    display:inline-block;animation:pulse 2.4s ease-in-out infinite;vertical-align:middle;margin-right:6px}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+  .deck{padding:46px 0 30px;display:flex;flex-direction:column;gap:30px}
+  figure{margin:0;position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    background:var(--panel);box-shadow:0 0 0 1px rgba(0,0,0,.4),0 24px 60px -28px rgba(39,255,158,.25);
+    opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  figure.in{opacity:1;transform:none}
+  figure img{width:100%;height:auto;display:block}
+  figure figcaption{position:absolute;top:10px;left:12px;font-size:11px;letter-spacing:.2em;
+    color:var(--green);background:rgba(4,6,10,.7);border:1px solid var(--line);
+    padding:3px 9px;border-radius:6px;backdrop-filter:blur(4px)}
+
+  .note{max-width:760px;margin:6px auto 0;color:var(--mute);font-size:12.5px;letter-spacing:.06em;
+    text-align:center;line-height:1.7}
+
+  footer{border-top:1px solid var(--line);margin-top:30px;padding:46px 20px 70px;text-align:center}
+  .brand{font-family:"Orbitron",sans-serif;font-weight:900;font-size:clamp(26px,5vw,44px);letter-spacing:.12em;
+    color:#eafff5;text-shadow:0 0 16px rgba(39,255,158,.4)}
+  .brand b{color:var(--green)}
+  .tag{color:var(--mute);letter-spacing:.18em;margin-top:8px;font-size:13px}
+  .cta{display:inline-block;margin-top:26px;font-family:"Orbitron",sans-serif;font-weight:700;
+    letter-spacing:.18em;font-size:13px;color:#04060a;background:var(--green);text-decoration:none;
+    padding:13px 26px;border-radius:8px;box-shadow:0 0 22px rgba(39,255,158,.5);text-transform:uppercase}
+  .fmeta{margin-top:24px;color:var(--green-dim);font-size:11px;letter-spacing:.24em;text-transform:uppercase}
+  a{color:var(--green)}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="kicker">The Qi-Lord Zero-Friction Enterprise Automation Stack</div>
+      <h1>SELF&#8209;EXECUTING&nbsp;<span class="lex">LEXICON</span></h1>
+      <p class="sub">A live manifesto of the system — capture, brain, voice, memory, and zero-touch operations — that runs the executive without the executive running it.</p>
+      <div class="meta">
+        <span class="chip"><span class="dot"></span>System Online</span>
+        <span class="chip">SELSCORP · S-Corp · IP Holdings</span>
+        <span class="chip">East Allen</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="deck" id="deck"></section>
+    <p class="note">Interim manifesto — the Self-Executing Lexicon as it stands today, served from SELSCORP until the entity is formally incorporated.</p>
+  </main>
+
+  <footer>
+    <div class="brand">SEL<b>SCORP</b></div>
+    <div class="tag">Architecting the Future of Automation</div>
+    <a class="cta" href="mailto:admin@selfexec.com">Initialize the System →</a>
+    <div class="fmeta">Contact: East Allen · admin@selfexec.com · Status: Online</div>
+  </footer>
+
+<script>
+  var deck=document.getElementById('deck');
+  for(var i=1;i<=15;i++){
+    var n=(i<10?'0':'')+i;
+    var fig=document.createElement('figure');
+    fig.innerHTML='<figcaption>'+n+' / 15</figcaption>'+
+      '<img loading="lazy" alt="Self-Executing Lexicon — page '+n+'" src="pages/p'+n+'.jpg">';
+    deck.appendChild(fig);
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('figure').forEach(function(f){io.observe(f);});
+</script>
+</body>
+</html>
