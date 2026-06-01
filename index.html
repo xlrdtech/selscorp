@@ -119,7 +119,7 @@
     var fig=document.createElement('figure');
     fig.style.setProperty('--d',(i*0.5)+'s');
     fig.innerHTML='<figcaption>'+n+' / 15</figcaption>'+
-      '<img loading="lazy" alt="Self-Executing Lexicon — page '+n+'" src="pages/p'+n+'.jpg">';
+      '<img loading="lazy" alt="Self-Executing Lexicon — page '+n+'" src="pages/s'+n+'.jpg">';
     deck.appendChild(fig);
   }
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
